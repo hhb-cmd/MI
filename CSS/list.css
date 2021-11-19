@@ -1,0 +1,91 @@
+.list {
+  background-color: #d7d7d7;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+.list .list_container {
+  padding-top: 40px;
+  width: 1266px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.list .list_container .list_data {
+  position: relative;
+  float: left;
+  width: 296px;
+  height: 430px;
+  margin-right: 14px;
+  margin-bottom: 14px;
+  text-align: center;
+  background: #fff;
+  -webkit-transition: -webkit-box-shadow .5s linear;
+  transition: -webkit-box-shadow .5s linear;
+  transition: box-shadow .5s linear;
+  transition: box-shadow .5s linear,-webkit-box-shadow .5s linear;
+}
+
+.list .list_container .list_data:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.list .list_container .list_data:hover .list_title {
+  color: #ff6700;
+}
+
+.list .list_container .list_data a {
+  display: block;
+  padding-top: 47px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.list .list_container .list_data a .list_img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 16px;
+}
+
+.list .list_container .list_data a .list_img img {
+  width: 200px;
+  height: 200px;
+}
+
+.list .list_container .list_data a .list_title {
+  margin: 0 auto;
+  width: 230px;
+  font-size: 14px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.list .list_container .list_data a .list_price {
+  margin: 0 0 15px;
+  color: #ff6700;
+}
+
+.list .list_container .list_data a .list_thumbs {
+  width: 100%;
+  height: 37px;
+  overflow: hidden;
+}
+
+.list .list_container .list_data a .list_thumbs li {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  margin: 0 4px;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  -webkit-transition: border-color .2s linear;
+  transition: border-color .2s linear;
+}
+
+.list .list_container .list_data a .list_thumbs li .list_active {
+  border-color: #ff6700;
+}

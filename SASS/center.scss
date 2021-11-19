@@ -1,0 +1,192 @@
+.center{
+    position: relative;
+    .list{
+        position: absolute;
+        z-index: 10;
+        width: 234px;
+        height: 460px;
+        background: rgba(105,101,101,.6);
+        ul{
+            padding: 20px 0;
+            li{
+                a{
+                    position: relative;
+                    display: block;
+                    padding-left: 30px;
+                    height: 42px;
+                    line-height: 42px;
+                    color: #fff;
+                    font-size: 14px;
+                    i{
+                        position: absolute;
+                        top: 12px;
+                        right: 20px;
+                        font-size: 16px;
+                        line-height: 16px;
+                        color: #e0e0e0;
+                    }
+                }
+                &:hover{
+                    background-color: #ff6700;
+                }
+            }
+        }
+    }
+    .swiper_container{
+        position: relative;
+        margin-bottom: 26px;
+        .swiper_wrapper{
+            height: 460px;
+            position: relative;
+            overflow: hidden;
+            div img{
+                position: absolute;
+                display: block;
+                width: 1226px;
+                height: 460px;
+            }
+            .swiper_radio{
+                position: absolute;
+                left: auto;
+                right: 30px;
+                bottom: 20px;
+                text-align: right;
+                z-index: 10;
+                a{
+                    float: left;
+                    display: block;
+                    margin: 0 4px;
+                    width: 6px;
+                    height: 6px;
+                    border: 2px solid #fff;
+                    border-color: hsla(0,0%,100%,.3);
+                    border-radius: 10px;
+                    overflow: hidden;
+                    background: rgba(0,0,0,.4);
+                    opacity: 1;
+                    transition: all 0.3s;
+                    &:hover{
+                        background: hsla(0,0%,100%,.4);
+                        border-color: rgba(0,0,0,.4);
+                    }
+                }
+                .active{
+                    background: hsla(0,0%,100%,.4);
+                    border-color: rgba(0,0,0,.4);
+                }
+            }
+            .swiper_right{
+                z-index: 10;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                width: 41px;
+                height: 69px;
+                transform: translate(0,-50%);
+                background: url('../img/icon_slides.png') no-repeat -125px 50%;
+                &:hover{
+                    background: url('../img/icon_slides.png') no-repeat -41px 50%;
+                }
+            }
+            .swiper_left{
+                z-index: 10;
+                position: absolute;
+                top: 50%;
+                left: 234px;
+                width: 41px;
+                height: 69px;
+                transform: translate(0,-50%);
+                background: url('../img/icon_slides.png') no-repeat -85px 50%;
+                &:hover{
+                    background: url('../img/icon_slides.png') no-repeat 0 50%;
+                }
+            }
+        }
+        .center_hero_sub{
+            margin-top: 14px;
+            .center_hero_sub_grid{
+                width: 234px;
+                float: left;
+                ul{
+                    margin: 0;
+                    padding: 3px;
+                    list-style-type: none;
+                    font-size: 12px;
+                    text-align: center;
+                    background: #5f5750;
+                    height: 164px;
+                    li{
+                        position: relative;
+                        float: left;
+                        width: 70px;
+                        height: 82px;
+                        padding: 0 3px;
+                        &::before,&::after{
+                            top: -1px;
+                            left: 6px;
+                            width: 64px;
+                            height: 1px;
+                        }
+                        &::after{
+                            top: 6px;
+                            left: 0;
+                            width: 1px;
+                            height: 70px;
+                        }
+                        &::after ,&::before{
+                            position: absolute;
+                            content: "";
+                            background: #665e57;
+                        }
+                        a{
+                            display: block;
+                            padding-top: 18px;
+                            text-overflow: ellipsis;
+                            color: #fff;
+                            opacity: .7;
+                            -webkit-transition: opacity .2s;
+                            transition: opacity .2s;
+                            i{
+                                display: block;
+                                margin: 0 auto 4px;
+                                font-size: 25px;
+                            }
+                            &:hover{
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+            .center_hero_sub_img{
+                float: left;
+                ul{
+                    li{
+                        float: left;
+                        margin-left: 14.5px;
+                        img{
+                            display: block;
+                            width: 316px;
+                            height: 170px;
+                            transition: box-shadow .2s linear,-webkit-box-shadow .2s linear;
+                            &:hover{
+                                -webkit-box-shadow: 0 15px 30px rgba(0,0,0,.1);
+                                box-shadow: 0 15px 30px rgba(0,0,0,.1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main{
+    background: #f5f5f5;
+    padding-top: 4px;
+    &_box{
+        height: 120px;
+        margin: 22px 0;
+        overflow: hidden;
+    }
+}
